@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas 1</title>
+</head>
+<body>
+    <main>
+    <h1>Current Trends in Deep Learning</h1>
+
+    <p><i>Co-written by:<p1 style="color: green;">Eirik Folkesta</p1>, <p2 style="color: green;">Manu Gopinathan</p2> & <p3 style="color: green;">Øyvind Nygard</i></p3></p>
+    <p> In the last decade, the area of artificial intelligence (AI) has exploded 
+        with interesting <br>and promising results. With major achievements in image 
+        recognition, speech recognition<br> and highly complex games, AI continues to 
+        disrupt society. This blog post will discuss practical <br>applications of AI, optimization 
+        and interpretability of deep learning models and <br>reinforcement learning (RL), based on the
+        <u>2018 REWORK Deep Learning Summit</u>in Toronto. <br>Four software engineers from <u>Knowit</u> had the 
+        pleasure of travelling to Canada to attend this conference, <br>and with renowned speakers such 
+        as Geoff Hinton attending, it turned out be an insightful experience.</p>
+    
+    <h2>Practical Predictions and Applications of AI</h2>
+
+    <p> Early AI revolved around perceiving, deciding and acting.<br> Today, the addition of learning
+        is also in place, <br> but due to the non-deterministic nature of the real world, <br> decisions 
+        cannot be made purely from the facts that are given. <br> Further development of AI will require 
+        improvements <br> in a variety of areas. Andrew W. Moore, Dean of the School of <br> Computer Science 
+        at Carnegie Mellon, shared his thoughts <br> on what he thinks will be important.</p>
+
+    <p> Firstly, game theory provides an improvement to the <br> decision making capabilities of 
+        an AI model, as the most <br> probable answer is not always the correct answer. This can 
+        be explained <br> from his example of an AI trying to predict the whereabouts of poachers 
+        in <br> a national park. At first, the AI performed well at predicting the location <br> of 
+        poachers, however, after a while the poachers in the national <br> park learned from this and 
+        went to less obvious locations. <br> As a result of this, the AI degenerated in performance. 
+        To improve <br> the AI, game theory was introduced. By viewing the poachers <br> as other players in 
+        a game, the AI was able to predict <br> where the poachers were located even though they were not 
+        <br> necessarily located at the optimal locations.</p>
+    
+    <p> Secondly, autonomous AI is much researched these days. <br> This enables, e.g., smaller robots to 
+        work together to solve <br> a larger problem, in addition self-optimizing code, <br> which means that 
+        the efficiency of an algorithm <br> written by a human can be improved by an AI. These are only <br> a 
+        few of the possibilities with more autonomous AI.</p>
+    
+    <p> As <u>presented</u> by Tzvi Aviv, Founder & CEO <br> at AgriLogicAI, AI can lead to major improvements 
+        in <br> the agriculture and food sector. In his presentation he <br> showed that AI can be used in 
+        conjunction <br> with geospatial data to increase productivity, profitability and <br> sustainability 
+        in the agriculture and food sector. By using remote sensing <br> yield performance of soy 
+        varieties, soil data, weather data <br> and genetic data of soy varieties, AgriLogicAi created an 
+        Ensemble of <br> Cubist model, <u>a type of rule-based model</u>, model which projected <br> a 5% increase in 
+        soy yields by optimizing the selected <br> soy variety given an area. This and other innovations to 
+        the agricultural <br> food industry will become more and more important as we are <br> facing a difficult
+        time ahead with more challenging weather conditions.</p>
+
+    <img src="img1.webp" alt="sekop" height="400" width="700">
+    
+    <p> Nargiz Mammadova, founder & CEO at <u>Destin AI</u>, <br> talked about the use of AI in immigration. To settle 
+        down in a new <br> country you would have to fill out many forms and be approved for citizenship <br> through 
+        various applications. Yet, before the actual <br> application process, you would have to navigate through
+        the bureaucratic <br> process of identifying and localizing these applications. This is <br> where AI could be 
+        helpful, exemplified by the AI <br> assistant Destin AI are currently working on, which can provide and 
+        effective <br> interface for users to interact with. The involvement of RPA together with an <br> AI-powered 
+        platform could potentially decrease refusal <br> rate and repetitive admin work, in addition to boosting 
+        the efficiency and accuracy <br> of information to the user. Furthermore, it could increase the number of
+        applications, <br> approval rate and the speed of the application process. Mammadova also presented <br> the
+        possibility of predicting the outcome of <br> an application and identifying reasons for approval and 
+        rejection. <br> As a result, the application reviewers can use more time on the <br> applications that are 
+        difficult and require more time to assess.</p>
+
+    <p> Brendan Frey, Co-Founder, CEO at Deep Genomics and Professor <br> at the University of Toronto, 
+        provided an insight to AI <br> in the pharmaceutical industry. He pointed out that 65% of all 
+        people will <br> be affected by a genetic disease over a lifetime and health budgets <br> in most 
+        countries are extremely high. In combination with a rapidly decreasing <br>internal rate of 
+        return for research and development in the pharmaceutical industry, the old way <br> of discovering 
+        new drugs is broken. AI needs to be further explored <br> in this field and, as mentioned in his <u>paper</u>, 
+        can most certainly help with this by aiding <br> in finding new drugs and personalize treatment
+        according a person’s genome. <br> With the human genome mapped and the large amount of datasets 
+        available, training <br> sequence models capable of discovering genes with unfavourable traits and 
+        mutations is not far from reality.</p>
+
+    <h2>Optimization and Robustness of Deep Learning</h2>
+
+    <p> Another big topic in the future of AI is optimization of deep learning <br> 
+        and how to make deep neural networks more robust. A known example of how <br>
+        fragile neural networks can be, is this adversarial demonstration from <br> 
+        <u>Explaining and Harvesting Adversarial Examples:</u></p>
+
+        <img src="img2.webp" alt="panda" height="200" width="650">
+
+    <p> In this example the network can detect the panda in the image to the left. <br>
+        Now, if you alter that picture by adding a toned down image of noise with <br>
+        gibbon-like features, the network will classify the image as a gibbon. However, <br>
+        to the human eye the picture has not been altered at all.</p>
+
+    <p> Researchers at McGill University are trying to address this by using Lipschitz <br> 
+        regularization while performing adversarial training as presented at the REWORK <br>
+        deep learning summit Toronto 2018. The Lipschitz constant measures the amplification <br>
+        factor of a perturbation, and by adding this to the loss function during training of <br>
+        a neural network, one can improve the adversarial attack robustness with a significant amount.</p>
+
+    <p> Another challenge for AI is processing power. In the future we want the machine learning <br>
+        models to run on embedded devices such as phones and in cars, but the amount of processing <br>
+        power currently present in these devices are not on the same level as computers. Snapchat <br>
+        uses neural networks in their filters, and are working on making these networks runnable on your <br>
+        phone. One way Snapchat is trying to solve this issue is by model compression; how can we keep <br>
+        the high accuracy, but lower the computational complexity? Their idea is to use weight sampling, <br>
+        as convolutional filters are, in their words, highly redundant. Snapchat has developed new features, <br>
+        allowing 5x3 (15) weights be condensed to 7 weights, thereby reducing the memory usage by more than 50%.</p>
+
+    <p> The University of Guelph (UoG) are also working on deep learning optimization. ML practitioners often <br>
+        assume they have a 32-bit floating point data type easily accessible. However, by using lower precision <br>
+        one can greatly increase speed and memory advantages. Researchers from UoG are working on methods <br>
+        to train networks with binary weights and activations at run time. In addition to memory advantages <br>
+        and higher speed, they report that the binary networks are also more resistant to adversarial attacks!</p>
+    
+    </main>
+</body>
+</html>
